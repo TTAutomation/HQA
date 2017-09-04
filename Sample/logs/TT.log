@@ -1,0 +1,14 @@
+2017-07-26 15:38:46,842 INFO  [Setup] --Config file is picked from the given path: Login.properties 
+2017-07-26 15:38:46,843 INFO  [Setup] --Config file is picked from the given path: Address.properties 
+2017-07-26 15:38:46,843 INFO  [Setup] Initializing Excel Files 
+2017-07-26 15:38:47,683 INFO  [Setup] XlsMPFOrder.xlsx file is Initialized 
+2017-07-26 15:38:47,806 INFO  [Setup] Suite.xlsx file is Initialized 
+2017-07-26 15:38:47,806 INFO  [Setup]  All Excel Files Initialized successfully  
+2017-07-26 15:38:47,806 INFO  [Setup] Checking Runmode of Suite A 
+2017-07-26 15:38:47,818 INFO  [Setup] Executing Suite A as the runmode was set to Yes 
+2017-07-26 15:38:52,105 INFO  [Setup] --Chrome Browser has opened  
+2017-07-26 15:38:56,310 INFO  [Setup] Application Navigated to the URL - http://eve-sales-bssaip.trio-2.nec.talkdev.co.uk/jigesales 
+2017-07-26 15:38:56,328 INFO  [Setup] Navigated Page title - Sales portal 
+2017-07-26 15:38:56,831 INFO  [Setup] Entered PostCode - HA8 0AG 
+2017-07-26 15:38:57,079 INFO  [Setup] Entered AgentID - 123321.0 
+2017-07-26 15:38:58,065 INFO  [Setup] Clicked the button - CheckAvailability  
