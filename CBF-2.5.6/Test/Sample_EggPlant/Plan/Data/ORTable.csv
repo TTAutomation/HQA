@@ -1,0 +1,137 @@
+Button_Title,Image_Name,Product_Code,Long_Name,ShortName,DTName
+COD\n1,COD1.png,,COD 1,,
+COD\n2,G1_COD2.png,,COD 2,,
+Image\nRecall,G1_IMRCL.png,,Image Recall,,
+Multi\nOrder,G1_MLTORDOFF.png,,Multi Order,,
+Recall\nBy\nNumber,RecallNum.png,,Recall By Number,,
+Recall\nBy Preview,R1_RBPreview.png,,Recall By Preview,,
+Recall\nNext\nOrder,B1_Recall.png,,Recall Next Order,,
+Ala \nCarte\nMenu,B1_ALACRT.png,,Ala  Carte Menu,,
+Grill,G1_GRLL.png,,Grill,,
+Manager\nMenu,R1_MGR.png,,Manager Menu,,
+0,0.png,,0,,
+1,1.png,,1,,
+2,2.png,,2,,
+3,3.png,,3,,
+4,4.png,,4,,
+5,5.png,,5,,
+6,6.png,,6,,
+7,7.png,,7,,
+8,8.png,,8,,
+9,9.png,,9,,
+Breakfst\n---------\nBreakst 2,MenuPage_Brkfast3.png,,Breakfst --------- Breakst 2,,
+Lunch\n---------\nLunch 2,MenuPage_Lunch3.png,,Lunch,,
+Value Menu\n---------------\nSalads,ValueMenuSalads1.png,,Value Menu --------------- Salads,,
+DRINK,MenuPage_Drinks.png,,DRINK,,
+McCafe,McCafe_Overnight.png,,McCafe,,
+Dessert\n---------\nDessert 2,MenuPage_DESSERT3.png,,Dessert --------- Dessert 2,,
+HpyMeal\n---------\nB-Parties,MenuPage_HM_Bday3.png,,HpyMeal --------- B-Parties,,
+LSM\n---------\nLSM 2,MenuPage_LSM3.png,,LSM --------- LSM 2,,
+Condiments\n---------\nGifts,MenuPage_CondimentsGifts.png,,Condiments --------- Gifts,,
+Employee\nMenu,R1_SPCFN.png,,Employee Menu,,
+C\nChild,Y1_CHILD.png,,C Child,,
+Big\nMac\n,BIGMAC1S.png,5,Big Mac,Mac,Big Mac
+\nChzbrger\n,CHSBUR2.png,3,Cheeseburger,Chb,Cheeseburger
+QTR\nCheese\n,QPC3.png,7,Qtr Pounder Cheese,Qpc,Qtr Cheese
+Dbl\nQtr Chs\n#,DBLQPC4.png,3426,Dbl Qtr Cheese,Dqpc,Dbl Qtr Chs
+QTR\nHabanero\nRanch,QP HAB RCH5.png,4298,Qtr Bacon Habnro Ran,Qpchr,Qtr Bcn Hbn Rn
+QTR\nDeluxe\n,QP DLX 6.png,4282,Quarter Cheese Dlx,Qpcdx,Qtr Deluxe
+QTR\nBacon &\nCheese,QP BAC CHS7.png,4295,Quarter Bacon & Chs,Qpcbc,Qtr Bacon & Chs
+Make\nMeal,SimplifyEVM_MakeMeal.png,,Make Meal,,
+PROMO\nITEM,Modifiers_PromoItem.png,,PROMO ITEM,,
+Small,Y1_SMLL.png,,Small,,
+Ckn\nBacon\nMcWrap,BACMCWRAP8.png,990183,CKN & BCN MCWRAP***,CKN & BCN MCWRAP***,CKN & BCN MCWRAP***
+Chicken\nRanch\nMcWrap,RNCMCWRAP9.png,990177,CKN RANCH MCWRAP***,CKN RANCH MCWRAP***,CKN RANCH MCWRAP***
+Swt Chili\nChicken\nMcWrap,SCHILIMCWRAP10.png,990180,SWEET CHILI CKN MCWRAP***,SWEET CHILI CKN MCWRAP***,SWEET CHILI CKN MCWRAP***
+CHICKEN\n\nCLUB,CLBCKN11.png,990053,CHICKEN CLUB***,CHICKEN CLUB***,CHICKEN CLUB***
+Chicken\nBlt\n,BLTCKN12.png,990001,CHICKEN BLT***,CHICKEN BLT***,CHICKEN BLT***
+CHICKEN \nCLASSIC\n,CLSCKN13.png,990056,CHICKEN CLASSIC***,CHICKEN CLASSIC***,CHICKEN CLASSIC***
+2 Hot &\nSpicy\nMcChicken,2pk_McChic_Meal_14.png,6825,2 HOT&SPICY MCCHICKN,2 HSMC,2-HOT&SPCY MC
+\nRegister\n,G1_REG.png,1144,Register,Rgster,Register
+CLEAR\nCHOICE,Modifiers_ClearChoice.png,,CLEAR CHOICE,,
+Medium,Y1_MEDM.png,,Medium,,
+10\nNugget\n#,10NUG15.png,5280,10 McNuggets,10ng,10-McNuggets
+Filet\nO Fish\n#5,FOF16.png,5926,Filet-O-Fish,Fof,Filet
+S Style\nChicken\n#,SOCKN.png,2348,Southern Style Chkn,Ssck,Sth Style Ckn
+,,,,,
+,,,,,
+Clubhse\nBurger\n,Bacon Clubhouse Burger.png,5159,Bacon Clubhouse Qtr,Clbhse,Clubhouse Qtr
+Bacon\nClubhouse\n,Bacon Clubhouse Chicken.png,990269,BACON CLUBHOUSE***,BACON CLUBHOUSE***,BACON CLUBHOUSE***
+,,,,,
+SUB\nCHOICE,Modifiers_SideChoice.png,,SUB CHOICE,,
+Large,Y1_LARGE.png,,Large,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+BYO\nMenu,,,BYO Menu,,
+Med\nFry\n,Fries.png,8932,M French Fries,M Fry,M Fry
+\nSnack \nWrap,WRP_CKN.png,, Snack  Wrap,,
+VOID\nITEM,Modifiers_VoidLine.png,,VOID ITEM,,
+,,,,,
+COKE,D_COKE.png,521,M Coke,M Coke,M Coke
+Diet\nCOKE,D_DCOKE.png,652,M Diet Coke,M Diet,M Diet Coke
+Sprite,D_SPRT.png,721,M Sprite,M Sprt,M Sprite
+Orange\nSoda,D_ORHIC.png,621,M Hi-C Orange,M Hi-C,M Hi-C Orange
+\nICED\nTEA,D_ICTEA.png,80,M Unsweet Iced Tea,M Utea,M UNsweet Tea
+\nSWEET TEA\n,D_SWTEA.png,3429,M Sweet Iced Tea,M Stea,M Sweet Tea
+Small\nCoffee\n,Coffee.png,24,S Coffee,S Coff,S Coffee
+Show\nProduct\nBuild,Show Product Build.png,,Show Product Build,,
+Eat\nIn\nTotal,BL_EITOT.png,,Eat In Total,,
+Sr\nSenior,Y1_SNR.png,,Sr Senior,,
+\nDR. PEPPER\n,D_DRPEP.png,421,M Dr. Pepper,M Drpr,M Dr. Pepper
+\nMD DT DR PEPR\n,D_DDRPE.png,3015,M Diet Dr. Pepper,M Dtdr,M Diet Dr Pepr
+\nLight\nLemonade,D_LLMNA.png,9963,M Light Lemonade,M Ltlm,M Lt Lemonade
+STRAW\nBERRY\nFANTA,D_FNSTR.png,3413,M Fanta Strawberry,M Strf,M Fanta Straw
+MD\nOJ\nCC,OJCC.png,3582,M Orange Juice Cc,M Oj,M Orange Juice
+BOTTLED\nWATER\n,D_BTWTR.png,5474,Bottled Water,B Wtr,Bottled Water
+Decaf\nCoffee\n,Decaf.png,81,S Decaf Coffee,S Dcaf,S Decaf Coffee
+Show\nPrices,showPricesOff.PNG,,Show Prices,,
+Take\nOut\nTotal,BL_TOTOT.png,,Take Out Total,,
+TENDER MENU,TenderMenu_ScreenTitle.png,,TENDER MENU,,
+$50\n\nExact,G1_50XCT.png,,$50  Exact,,
+$20\n\nExact,G1_20XCT.png,,$20  Exact,,
+Next\nDollar,Next Dollar.png,,Next Dollar,,
+GIFT\nCertificate\n$1.00,B1_1GIFT2.png,,GIFT Certificate $1.00,,
+Discount\nMenu,G1_DSCNTMN.png,,Discount Menu,,
+RECALL \nBY PREVIEW,R1_RecallByPreview.png,,RECALL  BY PREVIEW,,
+$10\n\nExact,G1_10XCT.png,,$10  Exact,,
+$5\n\nExact,G1_5XCT.png,,$5  Exact,,
+Exact\n\nCash,G1_Exact Cash,,Exact  Cash,,
+GIFT\nCertificate\n$5.00,B1_5GIFT2.png,,GIFT Certificate $5.00,,
+Coupon\nMenu,G1_CPNMN.png,,Coupon Menu,,
+Crew\nTax\nExempt,B1_CTEXEMPT.png,,Crew Tax Exempt,,
+NEXT\nORDER,P1_NextOrder.png,,NEXT ORDER,,
+MODIFY \nORDER,Y1_MODIFY.png,,MODIFY  ORDER,,
+Exempt,G1_NOTAX.png,,Exempt,,
+NEW\nORDER,B1_NUORD.png,,NEW ORDER,,
+\nBillable\nSale,B1_BillableSales2.png,, Billable Sale,,
+CRW\n\nMeal,B1_CRWML.png,,CRW  Meal,,
+MGR\n\nMeal,B1_MGRML.png,,MGR  Meal,,
+0,W1_00CENT.png,,0,,
+CREDIT\nDEBIT or\nGift Card,Credit Debit LRG.png,,CREDIT DEBIT or Gift Card,,
+Cash\nAmount\nTendered,G1_CTEND.png,,Cash Amount Tendered,,
+STORE ORDER MENU,store_order_menu.png,,STORE ORDER MENU,,
+PICK LIST\N\NON / OFF,pickliston.png,,PICK LIST\N\NON / OFF,,
+PRINT \nPICK LIST,printpl.png,,PRINT  PICK LIST,,
+Store\nOrder,store.png,,Store Order,,
+Return,return.png,,Return,,
+Soft\nBump\nBar,softbump.png,,Soft Bump Bar,,
+Select\nKVS,selectkvs.png,,Select KVS,,
+Serve,serve.png,,Serve,,
+OK,Bump_Ok.png,,Bump_Ok,,
+Return Button Arrow,Return_Arrow.png,,Return Arrow,,
+Happy Meal,Happy_Meal_Menu.png,,Happy Meal,,
+MakeMeal_Medium,MakeMeal_Medium.png,,MakeMeal_Medium,,
+Bump Runner Serve,bumprunnerserve.png,,Runner Serve,,
+Overring,Overring.png,,Overring,,
+Floating_Grill_NO,Floating_Grill_NO.png,,Floating_Grill_NO,,
+Floating_Grill_BMSauce,Floating_Grill_BMSauce.png,,Floating_Grill_BMSauce,,
+Floating_Grill_Light,Floating_Grill_Light.png,,Floating_Grill_Light,,
+Floating_Grill_Salt,Floating_Grill_Salt.png,,Floating_Grill_Salt,,
+Floating_Grill_AddExtra,Floating_Grill_AddExtra.png,,Floating_Grill_AddExtra,,
+Floating_Grill_Cheese,Floating_Grill_Cheese.png,,Floating_Grill_Cheese,,
+Floating_Grill_Sub,Floating_Grill_Sub.png,,Floating_Grill_Sub,,
+Floating_Grill_QtrBun,Floating_Grill_QtrBun.png,,Floating_Grill_QtrBun,,
+QPC,QPC_3.png,,QPC,,

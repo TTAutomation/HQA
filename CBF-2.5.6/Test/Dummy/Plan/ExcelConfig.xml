@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<config>
+
+	<variable>
+		<name>TestSetAccess</name>
+		<value>
+			<plugin>ExcelTestSetAccess</plugin>
+      <parameters>
+				<testSetFile>${testSetFile}</testSetFile>
+				<testSetSheet>${testSetSheet}</testSetSheet>
+			</parameters>
+		</value>
+	</variable>
+
+	<variable>
+		<name>TestCaseAccess</name>
+		<value>
+			<plugin>ExcelTestCaseAccess</plugin>
+			<parameters>
+				<enableIterationSelection>true</enableIterationSelection>
+				<enableStepSelection>true</enableStepSelection>
+			</parameters>
+		</value>
+	</variable>
+
+	<variable>
+		<name>DataAccess</name>
+		<value>
+			<plugin>ExcelDataAccess</plugin>
+		</value>
+	</variable>
+
+	<variable>
+		<name>ResultReporter</name>
+		<value>
+			<array>
+				<value>
+					<plugin>ScreenDump</plugin>
+				</value>
+				<value>
+					<plugin>ExcelReport</plugin>
+				</value>
+				<value>
+					<plugin>HtmlEvent</plugin>
+				</value>
+				<value>
+					<plugin>ResultEventLogger</plugin>
+				</value>
+			</array>
+		</value>
+	</variable>
+
+
+	<variable>
+		<name>UIDrivers</name>
+		<value>
+			<array>
+				<value>
+					<plugin>Selenium</plugin>
+				</value>
+			</array>
+		</value>
+	</variable>
+
+	<variable>		  
+		<name>AppDriver</name>		  
+		<value>
+			<plugin>CompositeAppDriver</plugin>			    
+			<classname>ModuleDrivers.CompositeAppDriver</classname>
+			<parameters>
+				<browser>${browser}</browser>
+				<browserdriverfolder>C:\Users\ng831421\Desktop\Jars2</browserdriverfolder>
+			</parameters>
+		</value>		    
+	</variable>
+
+	<variable>
+		<name>InterTestCaseDelay</name>
+		<value>0</value>
+	</variable>
+
+	<variable>
+		<name>SleepTimerSlabs</name>
+		<value>2000,5000,10000,15000</value>
+	</variable>
+
+	<variable>
+		<name>AutoHome</name>
+		<value>D:\workspace_luna\CBF-2.5.3/Test/Dummy/Test/Sample1</value>
+	</variable>
+
+	<variable>
+		<name>WorkHome</name>
+		<value>D:\workspace_luna\CBF-2.5.3</value>
+	</variable>
+
+	<variable>
+		<name>RunHome</name>
+		<value>D:\workspace_luna\dummy/Logs/ExecutedOn_${UniqueUtils.uniqueDate()}
+		</value>
+	</variable>
+	
+</config>

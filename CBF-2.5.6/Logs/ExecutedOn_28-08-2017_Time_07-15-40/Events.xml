@@ -1,0 +1,511 @@
+<log type='setting'>
+<![CDATA[
+{'InterTestCaseDelay':'0',
+'ExecutionDate':'1503900942',
+'RunHome':'C:\Workspace\CBF-2.5.6\Logs\ExecutedOn_28-08-2017_Time_07-15-40',
+'AppDriver':'{plugin:CompositeAppDriver,
+classname:ModuleDrivers.CompositeAppDriver}',
+'TestCaseAccess':'{plugin:ExcelTestCaseAccess,
+parameters:
+{enableStepSelection:true,
+enableIterationSelection:true}}',
+'TestSetAccess':'{plugin:ExcelTestSetAccess,
+parameters:
+{testSetSheet:ExcelTestSet,
+testSetFile:TestSet.xls}}',
+'Browser':'{plugin:CHROME,
+parameters:
+{browserdriver:C:\Workspace\TalkTalk\Jars\Jars_updated\}}',
+'WorkHome':'C:\Workspace\CBF-2.5.6',
+'ObjectMap':'{plugin:ExcelMap}',
+'DataAccess':'{plugin:ExcelDataAccess}',
+'SleepTimerSlabs':'2000,5000,10000,15000',
+'ResultReporter':'[{plugin:ScreenDump},
+{plugin:ExcelReport},
+{plugin:HtmlEvent},
+{plugin:ResultEventLogger}]',
+'AutoHome':'C:\Workspace\CBF-2.5.6\Test\Sample1',
+'Entity':'Configuration'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'44171543',
+'entityDetails':
+{'Name':'AgentPortal_AllOrders',
+'iterationCount':'1'},
+'entityType':'TestCase',
+'entityName':'AgentPortal_AllOrders'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='components'>
+<![CDATA[
+{'AgentPortal_AllOrders':[{'occurrences':[],
+'componentCode':'LaunchApp',
+'stepName':'LaunchApp',
+'moduleCode':'AgentPortal_AllOrders'
+}
+,{'occurrences':[],
+'componentCode':'SimplyBroadband',
+'stepName':'SimplyBroadband',
+'moduleCode':'AgentPortal_AllOrders'
+}
+,{'occurrences':[],
+'componentCode':'Personaldetails',
+'stepName':'Personaldetails',
+'moduleCode':'AgentPortal_AllOrders'
+}
+,{'occurrences':[],
+'componentCode':'AppointmentandOrdercompletion',
+'stepName':'AppointmentandOrdercompletion',
+'moduleCode':'AgentPortal_AllOrders'
+}
+]
+}
+]]>
+</log>
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'46971545',
+'entityDetails':
+{'rowId':'testdata1',
+'name':'Itr1',
+'_selectYN':'Yes'},
+'parentId':'44171543',
+'entityType':'Iteration',
+'entityName':' Iteration:1'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'98971545',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','environment ':' EVE','pageName ':' AgentPortal_AllOrders','url ':' http://eve-sales-bssaip.trio-2.nec.talkdev.co.uk/jigesales',' '},
+'componentCode':'LaunchApp',
+'stepName':'LaunchApp',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'},
+'parentId':'46971545',
+'entityType':'TestStep',
+'entityName':'LaunchApp'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'28871545',
+'parentId':'98971545',
+'entityType':'Component',
+'entityName':'AgentPortal_AllOrders-LaunchApp'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'28871545'},
+'eventData':
+{'Details':
+{'actual':'AgentPortal App launched successfully',
+'expected':'AgentPortal App should be launched successfully',
+'screenDump':'true',
+'name':'Launching AgentPortal App'},
+'screenDumpName':'AgentPortal_AllOrders_LaunchApp_0_907',
+'rsType':'PASSED'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'28871545'},
+'childcount':'0',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1503900978',
+'startTime':'1503900945'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'98971545',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','environment ':' EVE','pageName ':' AgentPortal_AllOrders','url ':' http://eve-sales-bssaip.trio-2.nec.talkdev.co.uk/jigesales',' '},
+'componentCode':'LaunchApp',
+'stepName':'LaunchApp',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'}},
+'childcount':'1',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1503900978',
+'startTime':'1503900945'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'21871618',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','SubPackage ':' Fibre Broadband','SetupBox ':' TV Box','Contract_Length ':' 12 month','Address ':' ','IsTvAerialRequire ':' Yes','IsTvIncluded ':' No','Postcode ':' B16 8RX','IsPowerLineAdapter ':' Yes','TVorRouterLocation ':' In the same room','Street name ':' ','Property Number ':' ','BundleBoost ':' Sky Cinema','Package ':' Fast Broadband','AgentID ':' 123456','TvInstallation ':' Self Install',' '},
+'componentCode':'SimplyBroadband',
+'stepName':'SimplyBroadband',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'},
+'parentId':'46971545',
+'entityType':'TestStep',
+'entityName':'SimplyBroadband'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'50771619',
+'parentId':'21871618',
+'entityType':'Component',
+'entityName':'AgentPortal_AllOrders-SimplyBroadband'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'50771619'},
+'eventData':
+{'Details':
+{'actual':'Package Selection Completed successfully',
+'expected':'Package Selection should be Completed successfully',
+'screenDump':'true',
+'name':'Package Selection Completed'},
+'screenDumpName':'AgentPortal_AllOrders_SimplyBroadband_0_663',
+'rsType':'PASSED'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'50771619'},
+'childcount':'0',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1503901093',
+'startTime':'1503900979'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'21871618',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','SubPackage ':' Fibre Broadband','SetupBox ':' TV Box','Contract_Length ':' 12 month','Address ':' ','IsTvAerialRequire ':' Yes','IsTvIncluded ':' No','Postcode ':' B16 8RX','IsPowerLineAdapter ':' Yes','TVorRouterLocation ':' In the same room','Street name ':' ','Property Number ':' ','BundleBoost ':' Sky Cinema','Package ':' Fast Broadband','AgentID ':' 123456','TvInstallation ':' Self Install',' '},
+'componentCode':'SimplyBroadband',
+'stepName':'SimplyBroadband',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'}},
+'childcount':'1',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1503901093',
+'startTime':'1503900978'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'92671813',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','DOB_Date ':' 06','Email ':' ','confirm password ':' Aa123456','FirstName ':' Test','Confirm email ':' ','DOB_year ':' 1989','DOB_Month ':' July','Creditcheck_Month ':' May','HomeNumber ':' 01526547896','MobileNumber ':' 01236547896','password ':' Aa123456','Creditcheck_Year ':' 2009','LastName ':' Test',' '},
+'componentCode':'Personaldetails',
+'stepName':'Personaldetails',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'},
+'parentId':'46971545',
+'entityType':'TestStep',
+'entityName':'Personaldetails'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'97871813',
+'parentId':'92671813',
+'entityType':'Component',
+'entityName':'AgentPortal_AllOrders-Personaldetails'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'97871813'},
+'eventData':
+{'Details':
+{'actual':'Personal Details Completed successfully',
+'expected':'Personal Details should be Completed successfully',
+'screenDump':'true',
+'name':'Personal Details Completed'},
+'screenDumpName':'AgentPortal_AllOrders_Personaldetails_0_280',
+'rsType':'PASSED'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'97871813'},
+'eventData':
+{'Details':
+{'actual':'Personal Details Completed successfully',
+'expected':'Personal Details should be Completed successfully',
+'screenDump':'true',
+'name':'Personal Details Completed'},
+'screenDumpName':'AgentPortal_AllOrders_Personaldetails_0_403',
+'rsType':'PASSED'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'2',
+'entity':
+{'id':'97871813'},
+'childcount':'0',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1503901137',
+'startTime':'1503901093'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'92671813',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','DOB_Date ':' 06','Email ':' ','confirm password ':' Aa123456','FirstName ':' Test','Confirm email ':' ','DOB_year ':' 1989','DOB_Month ':' July','Creditcheck_Month ':' May','HomeNumber ':' 01526547896','MobileNumber ':' 01236547896','password ':' Aa123456','Creditcheck_Year ':' 2009','LastName ':' Test',' '},
+'componentCode':'Personaldetails',
+'stepName':'Personaldetails',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'}},
+'childcount':'1',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1503901137',
+'startTime':'1503901093'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'81671857',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','Creditcheck_year ':' 2009','password ':' TalkTalk123','Sortcode1 ':' 07','Sortcode2 ':' 01','confirm password ':' TalkTalk123','Order confrimation message ':' Thank you,
+your order has been confirmed.','Sortcode3 ':' 16','AccountNumber ':' 45725631',' '},
+'componentCode':'AppointmentandOrdercompletion',
+'stepName':'AppointmentandOrdercompletion',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'},
+'parentId':'46971545',
+'entityType':'TestStep',
+'entityName':'AppointmentandOrdercompletion'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'20871857',
+'parentId':'81671857',
+'entityType':'Component',
+'entityName':'AgentPortal_AllOrders-AppointmentandOrdercompletion'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'20871857'},
+'childcount':'0',
+'eventData':
+{'ResultType':'ERROR'},
+'finishTime':'1503901149',
+'startTime':'1503901137'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'81671857',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','Creditcheck_year ':' 2009','password ':' TalkTalk123','Sortcode1 ':' 07','Sortcode2 ':' 01','confirm password ':' TalkTalk123','Order confrimation message ':' Thank you,
+your order has been confirmed.','Sortcode3 ':' 16','AccountNumber ':' 45725631',' '},
+'componentCode':'AppointmentandOrdercompletion',
+'stepName':'AppointmentandOrdercompletion',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'}},
+'eventData':
+{'Details':
+{'actual':' and execution continued despite unexpected result in component',
+'expected':'',
+'screenDump':'true',
+'name':''},
+'screenDumpName':'<Empty>',
+'rsType':'ERROR'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'81671857',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','Creditcheck_year ':' 2009','password ':' TalkTalk123','Sortcode1 ':' 07','Sortcode2 ':' 01','confirm password ':' TalkTalk123','Order confrimation message ':' Thank you,
+your order has been confirmed.','Sortcode3 ':' 16','AccountNumber ':' 45725631',' '},
+'componentCode':'AppointmentandOrdercompletion',
+'stepName':'AppointmentandOrdercompletion',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'}},
+'childcount':'1',
+'eventData':
+{'ResultType':'ERROR'},
+'finishTime':'1503901149',
+'startTime':'1503901137'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'46971545',
+'entityDetails':
+{'rowId':'testdata1',
+'name':'Itr1',
+'_selectYN':'Yes'}},
+'childcount':'4',
+'eventData':
+{'ResultType':'ERROR'},
+'finishTime':'1503901149',
+'startTime':'1503900944'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'44171543',
+'entityDetails':
+{'Name':'AgentPortal_AllOrders',
+'iterationCount':'1'}},
+'childcount':'1',
+'eventData':
+{'ResultType':'ERROR'},
+'finishTime':'1503901149',
+'startTime':'1503900943'}
+]]>
+</log>
+
+

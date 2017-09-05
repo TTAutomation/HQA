@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<images>
+
+	<image name="EggMcmuf">
+	<attributes>
+			<title>EggMcmuf</title>
+			<imageRef>EggMcmuf.png</imageRef>
+			<h>53</h>
+			<v>49</v>
+			<buttonNum>1</buttonNum>
+			<x>1</x>
+			<y>1</y>
+		</attributes>
+	</image>
+	<image name="Breakfast">
+	<attributes>
+			<title>Breakfast</title>
+			<imageRef>Breakfast.png</imageRef>
+			<h>47</h>
+			<v>52</v>
+			<buttonNum>1</buttonNum>
+			<x>1</x>
+			<y>1</y>
+		</attributes>
+	</image>
+	<image name="Lunch">
+	<attributes>
+			<title>Lunch</title>
+			<imageRef>Lunch.png</imageRef>
+			<h>47</h>
+			<v>52</v>
+			<buttonNum>1</buttonNum>
+			<x>1</x>
+			<y>1</y>
+		</attributes>
+	</image>
+<image name="BigMac">
+	<attributes>
+			<title>BigMac</title>
+			<imageRef>BigMac.png</imageRef>
+			<h>47</h>
+			<v>52</v>
+			<buttonNum>1</buttonNum>
+			<x>1</x>
+			<y>1</y>
+		</attributes>
+	</image>
+</images>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<config>
+
+	<variable>
+		<name>TestSetAccess</name>
+		<value>
+			<plugin>ExcelTestSetAccess</plugin>
+		</value>
+	</variable>
+
+	<variable>
+		<name>TestCaseAccess</name>
+		<value>
+			<plugin>ExcelTestCaseAccess</plugin>
+			<parameters>
+				<enableIterationSelection>true</enableIterationSelection>
+				<enableStepSelection>true</enableStepSelection>
+			</parameters>
+		</value>
+	</variable>
+
+	<variable>
+		<name>DataAccess</name>
+		<value>
+			<plugin>ExcelDataAccess</plugin>
+		</value>
+	</variable>
+
+	<variable>
+		<name>ResultReporter</name>
+		<value>
+			<array>
+				<value>
+					<plugin>JenkinsScreenDump</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+				<value>
+					<plugin>JenkinsExcelReport</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+				<value>
+					<plugin>JenkinsHtmlEvent</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+				<value>
+					<plugin>JenkinsResultEventLogger</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+			</array>
+		</value>
+	</variable>
+
+	<variable>
+		<name>UIDrivers</name>
+		<value>
+			<array>
+				<value>
+					<plugin>Selenium</plugin>
+				</value>
+			</array>
+		</value>
+	</variable>
+	
+	<variable>		  
+		<name>AppDriver</name>		  
+		<value>
+			<plugin>CompositeAppDriver</plugin>			    
+			<classname>ModuleDrivers.CompositeAppDriver</classname>
+			<parameters>
+				<browser>${browser}</browser>
+				<browserdriverfolder>D:/Driver</browserdriverfolder>
+			</parameters>
+		</value>		    
+	</variable>
+
+	<variable>
+		<name>InterTestCaseDelay</name>
+		<value>0</value>
+	</variable>
+
+	<variable>
+		<name>SleepTimerSlabs</name>
+		<value>2000,5000,10000,15000</value>
+	</variable>
+
+	<variable>
+		<name>AutoHome</name>
+		<value>D:/Workspace/CBF-2.4.0/Test/Sample1</value>
+	</variable>
+
+	<variable>
+		<name>WorkHome</name>
+		<value>D:/Workspace/CBF-2.4.0</value>
+	</variable>
+
+	<variable>
+		<name>RunHome</name>
+		<value>D:/Workspace/CBF-2.4.0/Logs/${nodeLabel}_${browser}_${testSetSheet}
+		</value>
+	</variable>
+
+</config>

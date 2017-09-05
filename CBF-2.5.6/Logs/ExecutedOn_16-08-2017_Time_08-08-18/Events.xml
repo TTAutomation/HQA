@@ -1,0 +1,249 @@
+<log type='setting'>
+<![CDATA[
+{'InterTestCaseDelay':'0',
+'ExecutionDate':'1502867299',
+'RunHome':'C:\Workspace\CBF-2.5.6\Logs\ExecutedOn_16-08-2017_Time_08-08-18',
+'AppDriver':'{plugin:CompositeAppDriver,
+classname:ModuleDrivers.CompositeAppDriver}',
+'TestCaseAccess':'{plugin:ExcelTestCaseAccess,
+parameters:
+{enableStepSelection:true,
+enableIterationSelection:true}}',
+'TestSetAccess':'{plugin:ExcelTestSetAccess,
+parameters:
+{testSetSheet:ExcelTestSet,
+testSetFile:TestSet.xls}}',
+'Browser':'{plugin:CHROME,
+parameters:
+{browserdriver:C:\Workspace\TalkTalk\Jars\Jars_updated\}}',
+'WorkHome':'C:\Workspace\CBF-2.5.6',
+'ObjectMap':'{plugin:ExcelMap}',
+'DataAccess':'{plugin:ExcelDataAccess}',
+'SleepTimerSlabs':'2000,5000,10000,15000',
+'ResultReporter':'[{plugin:ScreenDump},
+{plugin:ExcelReport},
+{plugin:HtmlEvent},
+{plugin:ResultEventLogger}]',
+'AutoHome':'C:\Workspace\CBF-2.5.6\Test\Sample1',
+'Entity':'Configuration'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'55880819',
+'entityDetails':
+{'Name':'AgentPortal_AllOrders',
+'iterationCount':'1'},
+'entityType':'TestCase',
+'entityName':'AgentPortal_AllOrders'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='components'>
+<![CDATA[
+{'AgentPortal_AllOrders':[{'occurrences':[],
+'componentCode':'LaunchApp',
+'stepName':'LaunchApp',
+'moduleCode':'AgentPortal_AllOrders'
+}
+,{'occurrences':[],
+'componentCode':'SimplyBroadband',
+'stepName':'SimplyBroadband',
+'moduleCode':'AgentPortal_AllOrders'
+}
+,{'occurrences':[],
+'componentCode':'Personaldetails',
+'stepName':'Personaldetails',
+'moduleCode':'AgentPortal_AllOrders'
+}
+,{'occurrences':[],
+'componentCode':'AppointmentandOrdercompletion',
+'stepName':'AppointmentandOrdercompletion',
+'moduleCode':'AgentPortal_AllOrders'
+}
+]
+}
+]]>
+</log>
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'89980820',
+'entityDetails':
+{'rowId':'testdata1',
+'name':'Itr1',
+'_selectYN':'Yes'},
+'parentId':'55880819',
+'entityType':'Iteration',
+'entityName':' Iteration:1'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'15080820',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','environment ':' VIL','pageName ':' AgentPortal_AllOrders','url ':' http://vil-sales-bssaip.trio-2.nec.talkdev.co.uk/cobra',' '},
+'componentCode':'LaunchApp',
+'stepName':'LaunchApp',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'},
+'parentId':'89980820',
+'entityType':'TestStep',
+'entityName':'LaunchApp'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'54280821',
+'parentId':'15080820',
+'entityType':'Component',
+'entityName':'AgentPortal_AllOrders-LaunchApp'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'54280821'},
+'eventData':
+{'Details':
+{'actual':'AgentPortal App launched successfully',
+'expected':'AgentPortal App should be launched successfully',
+'screenDump':'true',
+'name':'Launching AgentPortal App'},
+'screenDumpName':'AgentPortal_AllOrders_LaunchApp_0_348',
+'rsType':'PASSED'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'54280821'},
+'childcount':'0',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1502867310',
+'startTime':'1502867301'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'FINISH',
+'passedCount':'1',
+'entity':
+{'id':'15080820',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','environment ':' VIL','pageName ':' AgentPortal_AllOrders','url ':' http://vil-sales-bssaip.trio-2.nec.talkdev.co.uk/cobra',' '},
+'componentCode':'LaunchApp',
+'stepName':'LaunchApp',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'}},
+'childcount':'1',
+'eventData':
+{'ResultType':'PASSED'},
+'finishTime':'1502867310',
+'startTime':'1502867300'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'80680830',
+'entityDetails':
+{'failTestIfUnexpected':'false',
+'componentParameters':DataRow{' _rowId ':' testdata1','SubPackage ':' Fibre Broadband','SetupBox ':' TV Box','Contract_Length ':' 12 month','Address ':' 102 Balnagask Circle,
+Aberdeen,
+AB11 8TT','IsTvAerialRequire ':' Yes','IsTvIncluded ':' Yes','Postcode ':' AB11 8TT','IsPowerLineAdapter ':' Yes','TVorRouterLocation ':' In the same room','Street name ':' ','Property Number ':' ','BundleBoost ':' Sky Cinema','Package ':' Fast Broadband','AgentID ':' 123456','TvInstallation ':' Self Install',' '},
+'componentCode':'SimplyBroadband',
+'stepName':'SimplyBroadband',
+'moduleCode':'AgentPortal_AllOrders',
+'abortTestIfUnexpected':'false',
+'componentOutputValidation':'null'},
+'parentId':'89980820',
+'entityType':'TestStep',
+'entityName':'SimplyBroadband'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'START',
+'entity':
+{'id':'57680831',
+'parentId':'80680830',
+'entityType':'Component',
+'entityName':'AgentPortal_AllOrders-SimplyBroadband'},
+'eventData':'<Empty>'}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'57680831'},
+'eventData':
+{'Details':
+{'actual':'',
+'expected':'Got the error message as - ',
+'screenDump':'true',
+'name':'Address Selection page'},
+'screenDumpName':'AgentPortal_AllOrders_SimplyBroadband_0_924',
+'rsType':'WARNING'}}
+]]>
+</log>
+
+
+<log type='event'>
+<![CDATA[
+{'eventType':'DETAILS',
+'entity':
+{'id':'57680831'},
+'eventData':
+{'Details':
+{'actual':'Package Selection Completed successfully',
+'expected':'Package Selection should be Completed successfully',
+'screenDump':'true',
+'name':'Package Selection Completed'},
+'screenDumpName':'AgentPortal_AllOrders_SimplyBroadband_0_616',
+'rsType':'WARNING'}}
+]]>
+</log>
+
+

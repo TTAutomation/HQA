@@ -1,0 +1,222 @@
+<project basedir="D:\Ambika_Workspace\CBF-2.4.0-EggPlant" default="run" name="cbf">
+	<property environment="env" />
+	<property name="src" location="${env.CBF_HOME}\CBF-2.4.0-EggPlant\src\ModuleDrivers" />
+	<property name="libs" location="${env.CBF_HOME}\CBF-2.4.0-EggPlant\CBF_related_Jars" />
+	<property name="libs1" location="D:\Ambika-CBF\Jars\XML RPC Jars" />
+
+	<path id="class.path">
+
+		<pathelement location="${libs}/apache-commons.jar" />
+		<pathelement location="${libs}/commons-configuration-1.10.jar" />
+		<pathelement location="${libs}/commons-io-2.4.jar" />
+		<pathelement location="${libs}/commons-lang3-3.3.2" />
+		<pathelement location="${libs}/gson-2.2.2.jar" />
+		<pathelement location="${libs}/json-simple-1.1.1.jar" />
+		<pathelement location="${libs}/jxl.jar" />
+		<pathelement location="${libs}/org.apache.commons.httpclient.jar" />
+		<pathelement location="${libs}/org-apache-commons-logging.jar" />
+		<pathelement location="${libs}/org-apache-ws-commons-util.jar" />
+		<pathelement location="${libs}/slf4j-api-1.7.10.jar" />
+		<pathelement location="${libs}/slf4j-simple-1.7.10.jar" />
+		<pathelement location="${libs}/testlink-api-client-2.0.jar" />
+		<pathelement location="${libs}/testlink-java-api-1.9.4-0.jar" />
+		<pathelement location="${libs}/testng-6.8.5.jar" />
+		<pathelement location="${libs}/xmlrpc-client-3.1.3.jar" />
+		<pathelement location="${libs}/xmlrpc-common-3.1.jar" />
+
+		<pathelement location="${libs}/sikuli-script.jar" />
+		<pathelement location="${libs1}/xml-apis-1.0.b2.jar" />
+		<pathelement location="${libs1}/ws-commons-util-1.0.2.jar" />
+		<pathelement location="${libs1}/junit-dep-4.11.jar" />
+		<pathelement location="${libs1}/junit3.8.1.jar" />
+		<pathelement location="${libs1}/hamcrest-library-1.3.jar" />
+		<pathelement location="${libs1}/hamcrest-core-1.3.jar" />
+		<pathelement location="${libs1}/commons-logging-api-1.0.3.jar" />
+		<pathelement location="${libs1}/commons-httpclient-3.0.1.jar" />
+		<pathelement location="${libs1}/commons-codec-1.2.jar" />
+
+		<pathelement location="${libs}/apache-commons-lang.jar" />
+		<pathelement location="${libs}/commons-cli-2.0.jar" />
+		<pathelement location="${libs}/log4j-1.2.13.jar" />
+		<pathelement location="${libs}/selenium-server-standalone-2.43.1.jar" />
+		<pathelement location="${env.CBF_HOME}\CBF-2.4.0-EggPlant\lib\cbf.jar" />
+		<pathelement location="${env.CBF_HOME}\CBF-2.4.0-EggPlant\lib\cbfx.jar" />
+		<pathelement location="${env.CBF_HOME}\CBF-2.4.0-EggPlant\lib\eggdriver.jar" />
+		<pathelement location="${env.CBF_HOME}\CBF-2.4.0-EggPlant\bin" />
+	</path>
+
+	<target name="compile">
+		<mkdir dir="${env.CBF_HOME}\CBF-2.4.0-EggPlant\Logs" />
+		<javac classpathref="class.path" srcdir="${src}" destdir="${env.CBF_HOME}\CBF-2.4.0-EggPlant\bin" />
+	</target>
+
+	<!-- 
+	Give the proper value in the depends key in the below target tag to execute proper tool with proper parameters
+	-->
+
+	<target name="run" depends="JenkinsExcel" />
+
+	<!-- This is the sample target having all the combinations for all types of tools -->
+	<target name="Sample" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0\Test\Sample1\Plan\model_config.xml" />
+			<arg value="-testsetfile"/>
+			<arg value="TestSet.xls" />
+
+			<!--
+				Uncomment this below <arg> tags and comment the last eight <arg> tags while
+				using framework without any tool
+			-->
+
+			<arg value="-testsetsheet" />
+			<arg value="FlightTestSet" />
+			<arg value="-browser" />
+			<arg value="CHROME" />
+
+			<!--
+				Uncomment this below two <arg> tags and comment the upper four and last six <arg> tags while
+				using framework with Testlink tool
+			-->
+
+			<!--
+			<arg value="-browser" />
+			<arg value="CHROME" />
+			-->
+
+			<!--
+				Uncomment this below <arg> tags and comment the upper six <arg> tags while
+				using framework with Jenkins tool
+			-->
+
+			<!-- 
+			<arg value="-nodelabel" />
+			<arg value="${label}" />
+			<arg value="-testsetsheet" />
+			<arg value="${TestSet}" />
+			<arg value="-browser" />
+		  <arg value="${Browser}" /> -->
+
+			<!--
+				Uncomment this below <arg> tags while
+				using framework with ALM tool
+			-->
+
+			<!--<arg value = "-almTestFolderPath"/>
+			<arg value = "Root\\test"/>
+			<arg value = "-almTestSet"/>
+			<arg value = "test"/>-->
+
+		</java>
+	</target>
+
+	<target name="JenkinsExcel" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0-EggPlant\Test\Sample_EggPlant\Plan\JenkinsExcelConfig.xml" />
+			<arg value="-testsetfile" />
+			<arg value="TestSet.xls" />
+			<arg value="-nodelabel" />
+			<arg value="${label}" />
+			<arg value="-testsetsheet" />
+			<arg value="Mac28" />
+			<arg value="-browser" />
+			<arg value="${Browser}" />
+		</java>
+	</target>
+
+	<target name="JenkinsDesigner" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0\Test\Sample1\Plan\JenkinsDesignerConfig.xml" />
+			<arg value="-testsetfile" />
+			<arg value="TestSet.xls" />
+			<arg value="-nodelabel" />
+			<arg value="${label}" />
+			<arg value="-testsetsheet" />
+			<arg value="${TestSet}" />
+			<arg value="-browser" />
+			<arg value="${Browser}" />
+		</java>
+	</target>
+
+	<target name="TestlinkExcel" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0\Test\Sample1\Plan\TestlinkExcelConfig.xml" />
+			<arg value="-testsetfile" />
+			<arg value="${env.CBF_HOME}\\XmlTestSets" />
+			<arg value="-browser" />
+			<arg value="IE" />
+
+		</java>
+	</target>
+
+	<target name="TestlinkDesigner" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0\Test\Sample1\Plan\TestlinkDesignerConfig.xml" />
+			<arg value="-testsetfile" />
+			<arg value="${env.CBF_HOME}\\XmlTestSets" />
+			<arg value="-browser" />
+			<arg value="FIREFOX" />
+
+		</java>
+	</target>
+
+	<target name="Excel" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0-EggPlant\Test\Sample_EggPlant\Plan\ExcelConfig.xml" />
+			<arg value="-testsetfile" />
+			<arg value="TestSet.xls" />
+			<arg value="-testsetsheet" />
+			<arg value="Mac28" />
+			<arg value="-browser" />
+			<arg value="CHROME" />
+		</java>
+	</target>
+
+	<target name="Designer" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0\Test\Sample1\Plan\DesignerConfig.xml" />
+			<arg value="-testsetfile" />
+			<arg value="TestSet.xls" />
+			<arg value="-testsetSheet" />
+			<arg value="DesignerTestSet" />
+			<arg value="-browser" />
+			<arg value="FIREFOX" />
+		</java>
+	</target>
+
+	<target name="ALM" depends="compile">
+		<property environment="env" />
+		<java classname="cbf.harness.TestSetRunner" failonerror="true" fork="true">
+			<classpath refid="class.path" />
+			<arg value="-configfilepath" />
+			<arg value="${env.CBF_HOME}\CBF-2.4.0-EggPlant\Test\Sample_EggPlant\Plan\ExcelConfig.xml" />
+			<arg value = "-almTestFolderPath"/>
+			<arg value = "Root\\test"/>
+			<arg value = "-almTestSet"/>
+			<arg value = "test"/>
+			<arg value="-browser" />
+			<arg value="CHROME" />
+		</java>
+	</target>
+</project>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG-CBF Demo" parallel="false" thread-count="2">
+ <parameter name="configFilePath" value="D:\workspace_luna\CBF-2.5.4\Test\Sample1\Plan\DesignerConfig.xml"/>
+ <parameter name="browser" value="CHROME"/>
+
+ <tests>
+  <test name="via">
+  <parameter name="tc_name" value="FlightBookingDemo"/>
+  <parameter name="folderPath" value="Root/Flight Booking Scenario"/>
+   <classes>
+    <class name="cbfx.testng.BridgeTestCase"/> 
+    
+   </classes>
+  </test> 
+  <test name="via1">
+  <parameter name="tc_name" value="FlightBookingDemo"/>
+  <parameter name="folderPath" value="Root/Flight Booking Scenario"/>
+   <classes>
+    <class name="cbfx.testng.BridgeTestCase"/> 
+   </classes>
+  </test> 
+ 
+  <test name="Iconnect">
+  <parameter name="tc_name" value="FlightBookingDemo"/>
+  <parameter name="folderPath" value="Root/Flight Booking Scenario"/>
+   <classes>
+    <class name="cbfx.testng.BridgeTestCase"/> 
+   </classes>
+  </test> 
+ </tests> 
+</suite> 

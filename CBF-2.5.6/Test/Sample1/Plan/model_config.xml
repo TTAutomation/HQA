@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<config>
+
+	<variable>
+		<name>TestSetAccess</name>
+
+		<!--
+			Uncomment this <value> tag and comment the lower <value> tag while
+			using framework without Testlink or ALM tool
+		-->
+
+		<value>
+			<plugin>ExcelTestSetAccess</plugin>
+		</value>
+
+		<!--
+			Uncomment this <value> tag and comment the upper <value> tag while
+			using framework with Testlink tool
+		-->
+		
+		<!--<value>
+			<plugin>XmlTestSetAccess</plugin>
+			<parameters>
+				<designerFolder>Root/Quote</designerFolder>
+			</parameters>
+		</value>-->
+		
+		<!--
+			Uncomment this <value> tag and comment the upper <value> tags while
+			using framework with ALM tool
+		-->
+		
+		<!--<value>
+			<plugin>AlmTestSetAccess</plugin>
+			<parameters>
+				<url>http://gnrgdcdt00144:8080/qcbin/</url>
+				<domain>TESTAUTO</domain>
+				<project>TESTAUTO</project>
+				<login_name>826949</login_name>
+				<password>bb@4739</password>
+				<almTestFolderPath>${almTestFolderPath}</almTestFolderPath>
+				<almTestSet>${almTestSet}</almTestSet>
+			</parameters>
+		</value>
+		
+	--></variable>
+
+	<variable>
+		<name>TestCaseAccess</name>
+
+		<!--
+			Uncomment this <value> tag and comment the lower <value> tag while
+			reading the test case from Excel
+		-->
+
+		<value>
+			<plugin>ExcelTestCaseAccess</plugin>
+			<parameters>
+				<enableIterationSelection>true</enableIterationSelection>
+				<enableStepSelection>true</enableStepSelection>
+			</parameters>
+		</value>
+
+		<!--
+			Uncomment this <value> tag and comment the upper <value> tag while
+			reading the test case from Designer
+		-->
+
+
+		<!--<value>
+			<plugin>DesignerTestCaseAccess</plugin>
+			<parameters>
+				<projectname>banking</projectname>
+			</parameters>
+		</value>-->
+
+
+	</variable>
+
+	<variable>
+		<name>DataAccess</name>
+
+		<!--
+			Uncomment this <value> tag and comment the lower <value> tag while
+			reading the data from Excel
+		-->
+
+		<value>
+			<plugin>ExcelDataAccess</plugin>
+		</value>
+
+		<!--
+			Uncomment this <value> tag and comment the upper <value> tag while
+			reading the data from database
+		-->
+
+
+		<!--<value>
+			<plugin>DBDataAccess</plugin>
+			<parameters>
+				<dbname>C:\\Users\\ab123456\\Desktop\\MyDatabase.accdb</dbname>
+			</parameters>
+		</value>-->
+
+
+	</variable>
+
+	<variable>
+		<name>ResultReporter</name>
+		<value>
+			<!--
+				Uncomment this <array> tag and comment the lower <array> tag while
+				using framework without Jenkins tool
+			-->
+
+			<array>
+				<value>
+					<plugin>ScreenDump</plugin>
+				</value>
+				<value>
+					<plugin>ExcelReport</plugin>
+				</value>
+				<value>
+					<plugin>HtmlEvent</plugin>
+				</value>
+				<value>
+					<plugin>ResultEventLogger</plugin>
+				</value>
+
+				<!--
+					Uncomment this testlink reporter plugin while using framework with Testlink tool
+				-->
+
+				<!--<value>
+					 <plugin>TestLink</plugin>
+					 <parameters>
+						<project>InsuranceDemo</project>
+						<build>Ins Build</build>
+						<plan>InsPlan</plan>
+					</parameters>
+				</value>-->
+				
+				<!--
+					Uncomment this ALM reporter plugin while using framework with ALM tool
+				-->
+				
+				<!--<value>
+					<plugin>AlmReporter</plugin>
+					<parameters>
+						<almTestFolderPath>${almTestFolderPath}</almTestFolderPath>
+						<almTestSet>${almTestSet}</almTestSet>
+					</parameters>
+				</value>
+
+			-->
+			</array>
+
+			<!--
+				Uncomment this<array> tag and comment the lower <array> tag while
+				using framework with Jenkins tool
+			-->
+
+
+			<!--<array>
+				<value>
+					<plugin>JenkinsScreenDump</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+				<value>
+					<plugin>JenkinsExcelReport</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+				<value>
+					<plugin>JenkinsHtmlEvent</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+				<value>
+					<plugin>JenkinsResultEventLogger</plugin>
+					<parameters>
+						<pattern>_${nodeLabel}.${browser}.${UniqueUtils.uniqueDate()}
+						</pattern>
+					</parameters>
+				</value>
+			</array> -->
+
+
+		</value>
+	</variable>
+
+	<variable>
+		<name>UIDrivers</name>
+		<value>
+			<array>
+			
+			<!-- Uncomment the proper driver plugin tag with respect to the driver needed to be used ans comment the rest -->
+			
+				<!--
+					<value> <plugin>Sikuli</plugin> </value>
+				-->
+				<value>
+					<plugin>Selenium</plugin>
+				</value>
+
+				<!--<value>
+					<plugin>EggPlant</plugin>
+
+					<parameters>
+						<suitepath>D:/Ambika_Workspace/CBF-2.4.0-EggPlant/Test/Sample_EggPlant/Plan/AppDriver/OR/eggplant.suite
+						</suitepath>
+					</parameters>
+				</value>
+			-->
+			
+			</array>
+		</value>
+	</variable>	
+
+	<variable>		  
+		<name>AppDriver</name>		  
+		<value>
+			<plugin>CompositeAppDriver</plugin>			    
+			<classname>ModuleDrivers.CompositeAppDriver</classname>
+			<parameters>
+				<browser>${browser}</browser>
+				<browserdriverfolder>D:/Driver</browserdriverfolder>
+			</parameters>
+		</value>		    
+	</variable>
+
+	<variable>
+		<name>InterTestCaseDelay</name>
+		<value>0</value>
+	</variable>
+
+	<variable>
+		<name>SleepTimerSlabs</name>
+		<value>2000,5000,10000,15000</value>
+	</variable>
+
+	<variable>
+		<name>AutoHome</name>
+		<value>D:/Workspace/CBF-2.4.0/Test/Sample1</value>
+	</variable>
+
+	<variable>
+		<name>WorkHome</name>
+		<value>D:/Workspace/CBF-2.4.0</value>
+	</variable>
+
+	<variable>
+		<name>RunHome</name>
+
+		<!--
+			Uncomment this <value> tag and comment the lower <value> tag while
+			using framework without Jenkins tool
+		-->
+
+		<value>D:/Workspace/CBF-2.4.0/Logs/ExecutedOn_${UniqueUtils.uniqueDate()}
+		</value>
+
+		<!--
+			Uncomment this <value> tag and comment the upper <value> tag while
+			using framework with Jenkins tool
+		-->
+
+		<!--
+			<value>D:/Ambika_Workspace/CBF-LPL/Logs/${nodeLabel}_${browser}_${testSetSheet}
+			</value>
+		-->
+	</variable>
+
+</config>

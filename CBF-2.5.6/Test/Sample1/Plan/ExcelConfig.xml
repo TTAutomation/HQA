@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<config>
+
+	<variable>
+		<name>TestSetAccess</name>
+		<value>
+			<plugin>ExcelTestSetAccess</plugin>
+			<parameters>
+				<testSetFile>${testSetFile}</testSetFile>
+				<testSetSheet>${testSetSheet}</testSetSheet>
+			</parameters>
+		</value>
+	</variable>
+
+	<variable>
+		<name>TestCaseAccess</name>
+		<value>
+			<plugin>ExcelTestCaseAccess</plugin>
+			<parameters>
+				<enableIterationSelection>true</enableIterationSelection>
+				<enableStepSelection>true</enableStepSelection>
+			</parameters>
+		</value>
+	</variable>
+
+	<variable>
+		<name>DataAccess</name>
+		<value>
+			<plugin>ExcelDataAccess</plugin>
+		</value>
+	</variable>
+	<variable>
+		<name>ObjectMap</name>
+		<value>
+			<plugin>ExcelMap</plugin>
+		</value>
+	</variable>
+
+	<variable>
+		<name>ResultReporter</name>
+		<value>
+			<array>
+				<value>
+					<plugin>ScreenDump</plugin>
+				</value>
+				<value>
+					<plugin>ExcelReport</plugin>
+				</value>
+				<value>
+					<plugin>HtmlEvent</plugin>
+				</value>
+				<value>
+					<plugin>ResultEventLogger</plugin>
+				</value>
+			</array>
+		</value>
+	</variable>
+
+	<variable>
+		<name>Browser</name>
+		<value>
+			<plugin>${browser}</plugin>
+			<parameters>
+				<browserdriver>C:\Workspace\TalkTalk\Jars\Jars_updated\
+				</browserdriver>
+			</parameters>
+		</value>
+	</variable>
+
+	<variable>
+		  
+		<name>AppDriver</name>
+		  
+		<value>
+			<plugin>CompositeAppDriver</plugin>
+			    
+			<classname>ModuleDrivers.CompositeAppDriver</classname>
+		</value>
+		    
+	</variable>
+
+	<variable>
+		<name>InterTestCaseDelay</name>
+		<value>0</value>
+	</variable>
+
+	<variable>
+		<name>SleepTimerSlabs</name>
+		<value>2000,5000,10000,15000</value>
+	</variable>
+
+	<variable>
+		<name>AutoHome</name>
+		<value>C:\Workspace\CBF-2.5.6\Test\Sample1</value>
+		</variable>
+
+	<variable>
+		<name>WorkHome</name>
+		<value>C:\Workspace\CBF-2.5.6</value>
+	</variable>
+
+	<variable>
+		<name>RunHome</name>
+		<value>C:\Workspace\CBF-2.5.6\Logs\ExecutedOn_${UniqueUtils.uniqueDate()}</value>
+	</variable>
+	
+
+</config>
