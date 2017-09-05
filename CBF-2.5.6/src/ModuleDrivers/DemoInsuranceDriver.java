@@ -30,6 +30,7 @@ public class DemoInsuranceDriver extends BaseWebModuleDriver{
 		uiDriver.launchApplication(input.get("url"));
 		if(uiDriver.checkPage("Login"))
 		{			
+			System.out.println("test");
 			passed("Launching Insurance App", "Insurance App should be launched successfully", "Insurance App launched successfully");
 		}
 		else
