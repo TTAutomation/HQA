@@ -14,7 +14,9 @@ public class LoginPageActions {
 	public String ToGetMPFXLSCellData(String Methodname, String ColumnName,int RowNum)
 	{
 		String Data = Setup.MPFOrderxls.getCellData("TestData", ColumnName, RowNum);
+		System.out.println(Data);
 		return  Data;
+		
 	}
 	
 	public void ToNavigate_MPF_AppUrl() throws Exception
