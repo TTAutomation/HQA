@@ -36,6 +36,7 @@ public class AgentPortal_AllOrdersDriver extends BaseWebModuleDriver{
 	static String CRDDate="";
 	static String CMMDDID="";
 	Select sel;
+	Select sel1;
 	static String Environment="";
 	static int Counter=0;
 	//AgentPortal_AllOrdersDriver Agent = new AgentPortal_AllOrdersDriver();
